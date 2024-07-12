@@ -43,7 +43,8 @@ int main()
 {
     // You can run on following Testcases
 
-    // string s = "abcddefghij";
+    string s = "abcddefghij";
+    cout<<s<<endl;
     // => Excepted Output : 7 ("defghij")
 
     // string s = "abcddefgghij";

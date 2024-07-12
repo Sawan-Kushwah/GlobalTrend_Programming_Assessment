@@ -47,18 +47,20 @@ int main()
     cout << "Before reverse" << endl;
     while (temp != NULL)
     {
-        cout << temp->val << endl;
+        cout << temp->val;
         temp = temp->next;
+        if(temp != NULL) cout<<" -> ";
     }
 
     node *reversedHead = reverse(head);
 
     temp = reversedHead;
-    cout << "After reverse" << endl;
+    cout << "\nAfter reverse" << endl;
     while (temp != NULL)
     {
-        cout << temp->val << endl;
+        cout << temp->val;
         temp = temp->next;
+        if(temp != NULL) cout<<" -> ";
     }
 
     return 0;

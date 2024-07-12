@@ -22,24 +22,18 @@ void rotateArray(int arr[] , int n , int k){
 
 int main()
 {
-    // Output
-    // Before K rotation
-    // 1 2 3 4 5 6
-    // After K rotation
-    // 5 6 1 2 3 4
-
     int arr[] = {1,2,3,4,5,6};
     int length = sizeof(arr) / sizeof(arr[0]);
     int k = 2;
 
-    cout<<"Before K rotation"<<endl;
+    cout<<"Before K rotation "<<endl;
     for(int i = 0; i < length; i++){
         cout<<arr[i]<<" ";
     }
 
     rotateArray(arr ,length-1, k);
 
-    cout<<"\nAfter K rotation"<<endl;
+    cout<<"\nAfter K = "<<k << " rotation "<<endl;
     for(int i = 0; i < length; i++){
         cout<<arr[i]<<" ";
     }
